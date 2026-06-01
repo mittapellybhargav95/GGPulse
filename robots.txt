@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mittapellybhargav95.github.io/GGPulse/sitemap.xml
