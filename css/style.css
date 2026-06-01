@@ -1,27 +1,25 @@
 body{
     margin:0;
-    font-family:Arial,sans-serif;
+    font-family:'Segoe UI',sans-serif;
     color:white;
-    background:
-    radial-gradient(circle at top left,#16213e,#0f0f0f 50%),
-    radial-gradient(circle at bottom right,#1b4332,#0f0f0f 50%);
+    background:#0b0b12;
     min-height:100vh;
+    line-height: 1.6;
 }
 
 /* Header */
 header{
     background:
     linear-gradient(
-        rgba(0,0,0,0.6),
-        rgba(0,0,0,0.6)
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.75)
     ),
-    url("../images/banner.jpg");
+    url("../images/banner1.jpg");
 
     background-size:cover;
     background-position:center;
-    padding:40px 20px;
+    padding:100px 20px;
     text-align:center;
-    border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
 /* Logo */
@@ -29,23 +27,9 @@ header{
     font-size:60px;
     font-weight:900;
     letter-spacing:2px;
-
-    background:linear-gradient(
-    90deg,
-    #ff006e,
-    #ff8c00,
-    #ffd60a,
-    #00ffff
-    );
-
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-
-    text-shadow:
-    0 0 10px rgba(255,0,110,0.5),
-    0 0 20px rgba(0,255,255,0.5);
-
-    animation:float 3s ease-in-out infinite;
+    color:#ffffff;
+    text-shadow:none;
+    animation:none;
 }
 
 /* Navigation */
@@ -58,8 +42,8 @@ nav a{
 }
 
 nav a:hover{
-    color:#ff8c00;
-    text-shadow:0 0 10px #ff8c00;
+    color:#8b5cf6;
+    
 }
 
 /* Hero Section */
@@ -75,19 +59,8 @@ nav a:hover{
     font-weight:900;
     line-height:1.2;
     margin-bottom:20px;
-
-    background:linear-gradient(
-    90deg,
-    #ff006e,
-    #ff8c00,
-    #00ffff
-    );
-
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-
-    text-shadow:
-    0 0 15px rgba(255,0,110,0.4);
+    color:white;
+    text-shadow:none;
 }
 
 .hero-banner p{
@@ -105,7 +78,7 @@ nav a:hover{
     background:#1f1f1f;
     color:white;
     outline:none;
-    box-shadow:0 0 20px rgba(0,255,255,0.2);
+    box-shadow:0 0 20px rgba(139,92,246,0,15);
     transition:0.3s;
 
     display:block;
@@ -113,7 +86,7 @@ nav a:hover{
 }
 
 .search-box:focus{
-    box-shadow:0 0 25px #00ffff;
+    box-shadow:0 0 25px rgba(139,92,246,.4);
 }
 
 /* Sections */
@@ -137,51 +110,42 @@ nav a:hover{
 }
 
 .card{
-    background:linear-gradient(
-        145deg,
-        rgba(255,255,255,0.08),
-        rgba(255,255,255,0.03)
-    );
+    background:#141420;
 
-    backdrop-filter:blur(12px);
-    border:1px solid rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,.08);
 
     padding:25px;
-    width:auto;
+
     border-radius:20px;
 
-    transition:all 0.4s ease;
+    transition:.3s;
 
-    box-shadow:0 10px 30px rgba(0,0,0,0.4);
-
-    cursor:pointer;
-    overflow:hidden;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.35);
 }
 
 .card:hover{
-    transform:translateY(-10px) scale(1.03);
+    transform:translateY(-8px);
+
+    border-color:#8b5cf6;
 
     box-shadow:
-        0 0 25px rgba(255,0,110,0.6),
-        0 0 50px rgba(0,255,255,0.4);
+    0 0 30px rgba(139,92,246,.25);
 }
 
 .card h3{
     font-size:24px;
-
-    background:linear-gradient(
-    90deg,
-    #00ffff,
-    #00ff88
-    );
-
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    color:#ffffff;
+    margin-bottom:10px;
 }
 
 .card a{
-    color:#00ffff;
+    color:#a855f7;
     text-decoration:none;
+}
+
+.card p{
+    color: #bdbdc7;
 }
 
 .card a:hover{
@@ -191,7 +155,7 @@ nav a:hover{
 /* Card Images */
 .card img{
     width:100%;
-    height:180px;
+    height:220px;
     object-fit:cover;
     border-radius:15px;
     margin-bottom:15px;
@@ -205,45 +169,59 @@ nav a:hover{
 /* Buttons */
 .read-btn,
 .download-btn{
-    background:linear-gradient(
-    90deg,
-    #ff006e,
-    #ff8c00
-    );
+    display:inline-block;
 
-    color:white;
-    border:none;
-    padding:10px 15px;
-    border-radius:10px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:0.3s;
+    padding:12px 30px;
+
+    background:transparent;
+
+    border:2px solid #8b5cf6;
+
+    color:#8b5cf6;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:.3s;
 }
 
-.read-btn:hover,
 .download-btn:hover{
-    transform:scale(1.08);
+    background:#8b5cf6;
+    color:white;
 }
 
 /* Explore Button */
 .explore-btn{
     display:inline-block;
     padding:14px 30px;
+
     background:linear-gradient(
-    90deg,
-    #ff006e,
-    #ff8c00
+    135deg,
+    #8b5cf6,
+    #a855f7
     );
 
-    color:black;
-    font-weight:bold;
+    color:white;   /* change from black to white */
+
+    font-weight:700;
     text-decoration:none;
+
     border-radius:50px;
-    transition:0.3s;
+
+    box-shadow:
+    0 5px 15px rgba(139,92,246,.35);
+
+    transition:.3s ease;
 }
 
 .explore-btn:hover{
-    transform:scale(1.08);
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(139,92,246,.5);
 }
 
 /* Tagline */
@@ -256,10 +234,11 @@ nav a:hover{
 
 /* Footer */
 footer{
-    background:#000;
+    background:#08080d;
     text-align:center;
-    padding:20px;
-    margin-top:30px;
+    padding:25px;
+    margin-top:40px;
+    border-top:1px solid rgba(255,255,255,.08);
 }
 
 /* Animation */
