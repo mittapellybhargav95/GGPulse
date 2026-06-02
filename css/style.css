@@ -283,3 +283,19 @@ footer{
     margin:auto;
     padding:40px 20px;
 }
+#searchResults{
+    margin-top:15px;
+}
+
+.search-item{
+    background:#222;
+    padding:10px;
+    margin:5px auto;
+    max-width:350px;
+    border-radius:8px;
+}
+
+.search-item a{
+    color:#00ffff;
+    text-decoration:none;
+}
